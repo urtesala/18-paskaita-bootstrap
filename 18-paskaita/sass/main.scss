@@ -1,3 +1,88 @@
-body{
-    margin-top: 0%;
+@use 'reset';
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.container {
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+.contact {
+  padding-top: 80px;
+  padding-bottom: 76px;
+  background: #28293e;
+  .formContainer {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 57px 28px 48px;
+
+    .title {
+      font-size: 24px;
+      line-height: 32px;
+      color: #391400;
+      margin-top: 0;
+      margin-bottom: 28px;
+    }
+  }
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  select.textInput {
+    padding: 14px 16px 13px;
+  }
+  .textInput {
+    border: 1px solid #f3d1bf;
+    border-radius: 6px;
+    padding: 7px 16px 7px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(57, 20, 0, 0.64);
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 32px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: rgba(57, 20, 0, 0.64);
+    }
+    &.area {
+      min-height: 96px;
+      resize: vertical;
+    }
+  }
+  .btn.form {
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 18px 30px;
+    background-color: #ef6d58;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    align-self: end;
+    margin-top: 16px;
+  }
+}
+// media
+@media screen and (min-width: 800px) {
+    .container {
+      padding-left: 30px;
+      padding-right: 30px;
+      max-width: 1230px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .contact {
+      padding-top: 176px;
+      padding-bottom: 176px;
+      .contactGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }
+  }
