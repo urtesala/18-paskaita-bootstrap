@@ -25,6 +25,8 @@ body {
   background-color: #fff;
   border-radius: 6px;
   padding: 57px 28px 48px;
+  width: 329px;
+  height: 464px;
 }
 .contact .formContainer .title {
   font-size: 24px;
@@ -42,6 +44,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 16px;
+  max-width: 329px;
 }
 .contact select.textInput {
   padding: 14px 16px 13px;
@@ -101,6 +104,27 @@ body {
   -ms-flex-item-align: end;
       align-self: end;
   margin-top: 16px;
+}
+
+.contactInfo h5 {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #EF6D58;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 32px;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+.contactInfo h3 {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: normal;
+  color: #fff;
+  margin-top: 17px;
 }
 
 @media screen and (min-width: 800px) {
